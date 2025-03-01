@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开窍AI实验室</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 在 body 开头添加过渡动画容器 -->
+    <div class="page-transition">
+        <span class="transition-text">切换界面中...</span>
+    </div>
+
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-icon">AI</span>
+                </div>
+                <div class="brand-container">
+                    <span class="brand-text">开窍AI实验室-研究员作品</span>
+                    <div class="authors">
+                        <span class="author">@鄢思睿</span>
+                        <span class="author">@唐子卿</span>
+                        <span class="author">@唐瑞</span>
+                        <span class="author">@王欢</span>
+                        <span class="author">@包神</span>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#intro" class="nav-link">实验室介绍</a></li>
+                <li><a href="#courses" class="nav-link">课程推荐</a></li>
+                <li><a href="#news" class="nav-link">最新动态</a></li>
+                <li><a href="#student-stories" class="nav-link">学生事迹</a></li>
+                <li><a href="#ai-history" class="nav-link">AI发展历程</a></li>
+                <li><a href="#projects" class="nav-link">更多资料</a></li>
+                <li><a href="students.html" class="nav-link works-btn">学生作品</a></li>
+                <li>
+                    <a href="https://work.weixin.qq.com/kfid/kfc04fed4751c45b1f1" 
+                       target="_blank" 
+                       class="nav-link contact-btn">
+                        <i class="fab fa-weixin"></i>
+                        人工客服
+                    </a>
+                </li>
+                <li><a href="#footer" class="nav-link contact-btn">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero部分 -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="开窍AI实验室">开窍AI实验室</h1>
+            <h1 class="glitch" data-text="探索AI的无限可能">探索AI的无限可能</h1>
+            <p class="hero-text">
+                突破技术边界，引领智能革新
+            </p>
+            <div class="hero-buttons">
+                <a href="students.html" class="btn btn-primary">学生作品</a>
+                <a href="jobs.html" class="btn btn-outline">加入我们</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-number="10+">10+</span>
+                    <span class="stat-label">研究项目</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-number="300+">300+</span>
+                    <span class="stat-label">研究作品</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-number="80+">80+</span>
+                    <span class="stat-label">团队成员</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 在研究方向前添加实验室介绍部分 -->
+    <section class="lab-intro" id="intro">
+        <div class="container">
+            <h2 class="section-title">实验室介绍</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <!-- 教师介绍部分 -->
+                    <div class="teachers-intro">
+                        <h3>教师团队</h3>
+                        <div class="teachers-grid">
+                            <div class="teacher-card">
+                                <div class="teacher-info">
+                                    <h4>欢哥</h4>
+                                    <p class="teacher-title">开窍AI实验室主任 | 清华毕业/德国脑科学博士</p>
+                                    <ul class="teacher-achievements">
+                                        <li><i class="fas fa-check"></i> 5年计算神经网络实验室研究经历</li>
+                                        <li><i class="fas fa-check"></i> 家有15岁高手女儿</li>
+                                        <li><i class="fas fa-check"></i> 已助力6万+家庭提升学习成绩</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="teacher-card">
+                                <div class="teacher-info">
+                                    <h4>Michael老师</h4>
+                                    <p class="teacher-title">首席科学家 | 北大毕业/高检客座教授</p>
+                                    <ul class="teacher-achievements">
+                                        <li><i class="fas fa-check"></i> 1000万+青少年创作平台APP创始人</li>
+                                        <li><i class="fas fa-check"></i> 创新实验室负责人、人工智能专家</li>
+                                        <li><i class="fas fa-check"></i> 线上AI技巧分享覆盖人群过100万+</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 实验室介绍文本 -->
+                    <p class="intro-desc">
+                        开窍AI实验室致力于人工智能领域的前沿研究与创新应用。我们以培养AI人才、推动技术创新为使命，通过深度学习、计算机视觉、自然语言处理等领域的研究，探索AI的无限可能。
+                    </p>
+                    <div class="intro-features">
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>专业教学</h3>
+                            <p>顶尖师资团队，因材施教</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-flask"></i>
+                            <h3>创新研究</h3>
+                            <p>探索AI前沿，突破技术边界</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h3>团队协作</h3>
+                            <p>开放交流，共同进步</p>
+                        </div>
+                    </div>
+
+                    <!-- 助教团队介绍 -->
+                    <div class="assistant-team">
+                        <h3>助教团队</h3>
+                        <div class="assistant-grid">
+                            <div class="assistant-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>AI工程师</h4>
+                                <p>人工智能领域一线从业者</p>
+                            </div>
+                            <div class="assistant-item">
+                                <i class="fas fa-code"></i>
+                                <h4>全栈工程师</h4>
+                                <p>前后端开发专家</p>
+                            </div>
+                            <div class="assistant-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <h4>UI设计师</h4>
+                                <p>界面设计专家</p>
+                            </div>
+                            <div class="assistant-item">
+                                <i class="fas fa-server"></i>
+                                <h4>后台工程师</h4>
+                                <p>系统架构专家</p>
+                            </div>
+                            <div class="assistant-item">
+                                <i class="fas fa-pen-fancy"></i>
+                                <h4>内容专家</h4>
+                                <p>创作内容策划专家</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <!-- 教师头像 -->
+                    <div class="teachers-images">
+                        <div class="teacher-image">
+                            <img src="huan.jpg" alt="欢哥" class="teacher-avatar">
+                            <div class="teacher-overlay">
+                                <span>欢哥</span>
+                            </div>
+                        </div>
+                        <div class="teacher-image">
+                            <img src="bao.jpg" alt="包神" class="teacher-avatar">
+                            <div class="teacher-overlay">
+                                <span>包神Michael</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 课程简介卡片 -->
+                    <div class="course-brief">
+                        <h3>课程简介</h3>
+                        <div class="brief-card">
+                            <i class="fas fa-rocket"></i>
+                            <div class="brief-content">
+                                <h4>先导课</h4>
+                                <p>开启学习旅程，激发对AI的好奇心和探索欲</p>
+                            </div>
+                        </div>
+                        <div class="brief-card">
+                            <i class="fas fa-door-open"></i>
+                            <div class="brief-content">
+                                <h4>第一周</h4>
+                                <p>快速AI入门，掌握基础知识技能，实战小试牛刀</p>
+                            </div>
+                        </div>
+                        <div class="brief-card">
+                            <i class="fas fa-brain"></i>
+                            <div class="brief-content">
+                                <h4>第二周</h4>
+                                <p>了解AI思维方式，打造属于自己的虚拟人智能体</p>
+                            </div>
+                        </div>
+                        <div class="brief-card">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="brief-content">
+                                <h4>第三周</h4>
+                                <p>掌握语言化表达，使用AI工具创作虚拟形象</p>
+                            </div>
+                        </div>
+                        <div class="brief-card">
+                            <i class="fas fa-pen-fancy"></i>
+                            <div class="brief-content">
+                                <h4>第四周</h4>
+                                <p>学习基础写作知识，从0到1利用AI写一篇科幻微小说</p>
+                            </div>
+                        </div>
+                        <div class="brief-card">
+                            <i class="fas fa-book"></i>
+                            <div class="brief-content">
+                                <h4>第五周</h4>
+                                <p>融会贯通，打造属于自己的个人作品集</p>
+                            </div>
+                        </div>
+                        <div class="brief-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="brief-content">
+                                <h4>第六周</h4>
+                                <p>AI辅助学习，掌握学科学习方法论</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究项目介绍 -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">研究项目介绍</h2>
+            <div class="courses-grid">
+                <!-- 先导课 -->
+                <div class="course-card beginner">
+                    <div class="course-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>先导课</h3>
+                        <p class="course-desc">开启学习旅程，激发对AI的好奇心和探索欲</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> AI发展历程</li>
+                            <li><i class="fas fa-check"></i> AI基础概念</li>
+                            <li><i class="fas fa-check"></i> 学习路径规划</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-level">启蒙阶段</span>
+                            <span class="course-duration">1周课程</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第一周 -->
+                <div class="course-card week1">
+                    <div class="course-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>第一周</h3>
+                        <p class="course-desc">快速AI入门，掌握基础知识技能，实战小试牛刀</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> AI工具入门</li>
+                            <li><i class="fas fa-check"></i> 基础操作学习</li>
+                            <li><i class="fas fa-check"></i> 简单项目实践</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-level">入门阶段</span>
+                            <span class="course-duration">1周课程</span>
+                </div>
+                    </div>
+                </div>
+
+                <!-- 第二周 -->
+                <div class="course-card week2">
+                    <div class="course-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>第二周</h3>
+                        <p class="course-desc">了解AI思维方式，打造属于自己的虚拟人智能体</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> AI思维训练</li>
+                            <li><i class="fas fa-check"></i> 智能体开发</li>
+                            <li><i class="fas fa-check"></i> 个性化定制</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-level">进阶阶段</span>
+                            <span class="course-duration">1周课程</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第三周 -->
+                <div class="course-card week3">
+                    <div class="course-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>第三周</h3>
+                        <p class="course-desc">掌握语言化表达，使用AI工具创作虚拟形象</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> 提示词编写</li>
+                            <li><i class="fas fa-check"></i> 形象设计</li>
+                            <li><i class="fas fa-check"></i> 创意表达</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-level">创作阶段</span>
+                            <span class="course-duration">1周课程</span>
+                </div>
+            </div>
+        </div>
+
+                <!-- 第四周 -->
+                <div class="course-card week4">
+                    <div class="course-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>第四周</h3>
+                        <p class="course-desc">学习基础写作知识，从0到1利用AI写一篇科幻微小说</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> 写作基础</li>
+                            <li><i class="fas fa-check"></i> AI写作辅助</li>
+                            <li><i class="fas fa-check"></i> 小说创作</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-level">写作阶段</span>
+                            <span class="course-duration">1周课程</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第五周 -->
+                <div class="course-card week5">
+                    <div class="course-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>第五周</h3>
+                        <p class="course-desc">融会贯通，打造属于自己的个人作品集</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> 作品整理</li>
+                            <li><i class="fas fa-check"></i> 个性展示</li>
+                            <li><i class="fas fa-check"></i> 成果汇总</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-level">汇总阶段</span>
+                            <span class="course-duration">1周课程</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第六周 -->
+                <div class="course-card week6">
+                    <div class="course-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>第六周</h3>
+                        <p class="course-desc">AI辅助学习，掌握学科学习方法论</p>
+                        <ul class="course-features">
+                            <li><i class="fas fa-check"></i> 学习方法</li>
+                            <li><i class="fas fa-check"></i> 知识整合</li>
+                            <li><i class="fas fa-check"></i> 终身学习</li>
+                        </ul>
+                        <div class="course-footer">
+                            <span class="course-level">方法论阶段</span>
+                            <span class="course-duration">1周课程</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新动态 -->
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title">最新动态</h2>
+            <div class="news-slider">
+                <div class="news-timeline"></div>
+                
+                <!-- 添加3月1日的新闻卡片 -->
+                <div class="news-card">
+                    <div class="news-date">
+                        <div class="date-circle">
+                            <span class="day">01</span>
+                            <span class="month">03</span>
+                        </div>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="news-dot"></div>
+                    <div class="news-content">
+                        <h3>
+                            <i class="fas fa-door-open"></i>
+                            实验室开放日
+                        </h3>
+                        <div class="news-tags">
+                            <span class="news-tag">开放活动</span>
+                            <span class="news-tag">实验室参观</span>
+                        </div>
+                        <p>开窍AI实验室将举办开放日活动，欢迎对AI感兴趣的同学们参观交流。活动包括实验室环境展示、研究项目介绍、互动体验等环节。</p>
+                        <button class="card-link" onclick="window.location.href='open-day.html'">
+                            <span>了解更多</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 2月15日的卡片 -->
+                <div class="news-card">
+                    <div class="news-date">
+                        <div class="date-circle">
+                            <span class="day">15</span>
+                            <span class="month">02</span>
+                        </div>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="news-dot"></div>
+                    <div class="news-content">
+                        <h3>
+                            <i class="fas fa-flask"></i>
+                            突破性研究成果
+                        </h3>
+                        <div class="news-tags">
+                            <span class="news-tag">研究成果</span>
+                            <span class="news-tag">AI创新</span>
+                        </div>
+                        <p>开发新型注意力机制，提升模型性能30%；场景理解算法突破，目标检测准确率达95%；AI音乐创作系统成功举办首场交响音乐会。</p>
+                        <button class="card-link" onclick="window.location.href='breakthrough.html'">
+                            <span>了解更多</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">
+                        <div class="date-circle">
+                            <span class="day">20</span>
+                            <span class="month">08</span>
+                        </div>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="news-dot"></div>
+                    <div class="news-content">
+                        <h3>
+                            <i class="fas fa-rocket"></i>
+                            "意想不到"的实验室
+                        </h3>
+                        <div class="news-tags">
+                            <span class="news-tag">实验室新闻</span>
+                            <span class="news-tag">团队建设</span>
+                        </div>
+                        <p>开窍AI实验室正式成立，汇聚多领域优秀人才，设立AI艺术工作室、智能教育实验室等创新项目，致力于推动AI技术发展。</p>
+                        <button class="card-link" onclick="window.location.href='lab-established.html'">
+                            <span>了解更多</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学生事迹 -->
+    <section class="student-stories" id="student-stories">
+        <div class="container">
+            <h2 class="section-title">学生事迹</h2>
+            <div class="story-card">
+                <div class="story-header">
+                    <div class="student-avatar-container">
+                        <div class="student-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="achievement-badge">
+                            <i class="fas fa-trophy"></i>
+                            <span>优秀学员</span>
+                        </div>
+                    </div>
+                    <div class="student-info">
+                        <h3 data-text="唐思瑞">唐思瑞</h3>
+                        <div class="student-tags">
+                            <span class="student-tag"><i class="fas fa-code"></i> 全栈开发</span>
+                            <span class="student-tag"><i class="fas fa-robot"></i> AI爱好者</span>
+                            <span class="student-tag"><i class="fas fa-calculator"></i> 数学达人</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>网站开发</h4>
+                        <p>独立开发4个商业网站，帮助花店提升营业额300%，获得多位客户好评。</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>AI视频创作</h4>
+                        <p>制作AI动态视频在社交平台获得百万粉丝，展现AI技术的创新应用。</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>数学竞赛</h4>
+                        <p>获得多项数学竞赛奖项，展现出色的逻辑思维和问题解决能力。</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>机器人比赛</h4>
+                        <p>在AI机器人比赛中协助修复关键代码，获得主办方特别表彰。</p>
+                    </div>
+                </div>
+                
+                <div class="story-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">商业项目</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">粉丝数量</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">获奖证书</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在学生事迹和更多资料之间添加 AI 发展历程栏目 -->
+    <section class="ai-history" id="ai-history">
+        <div class="container">
+            <h2 class="section-title">AI发展历程</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1950s</div>
+                    <div class="timeline-content">
+                        <h3>人工智能的诞生</h3>
+                        <p>图灵测试提出，人工智能概念正式确立，标志着AI时代的开始。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1960s-1970s</div>
+                    <div class="timeline-content">
+                        <h3>早期发展</h3>
+                        <p>专家系统兴起，计算机开始在特定领域展现智能。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1980s-1990s</div>
+                    <div class="timeline-content">
+                        <h3>机器学习时代</h3>
+                        <p>神经网络理论发展，机器学习算法不断突破。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2010s</div>
+                    <div class="timeline-content">
+                        <h3>深度学习革命</h3>
+                        <p>深度学习技术突破，AI在图像识别、语音识别等领域取得重大进展。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2020s</div>
+                    <div class="timeline-content">
+                        <h3>大语言模型时代</h3>
+                        <p>GPT等大语言模型出现，AI与人类交互能力显著提升。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">未来</div>
+                    <div class="timeline-content">
+                        <h3>AI新纪元</h3>
+                        <p>通用人工智能的探索，AI将在更多领域发挥重要作用。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 更多资料 -->
+    <section class="research" id="projects">
+        <div class="container">
+            <h2 class="section-title">更多资料</h2>
+            <div class="research-grid">
+                <!-- 添加AI工具分类卡片 -->
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>AI工具分类</h3>
+                    <p>国内外知名AI工具分类整理，包括写作、图像、视频、对话等多个领域。</p>
+                    <button class="card-link" onclick="window.location.href='ai-tools.html'">
+                        <span>了解更多</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- 现有的深度学习卡片 -->
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>深度学习</h3>
+                    <p>探索神经网络架构，优化学习算法，推动AI技术革新。</p>
+                    <button class="card-link" onclick="window.location.href='deep-learning.html'">
+                        <span>了解更多</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- 现有的自然语言处理卡片 -->
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>自然语言处理</h3>
+                    <p>研究语义理解、情感分析、跨语言翻译等技术，构建智能对话与文本分析系统。</p>
+                    <button class="card-link" onclick="window.location.href='nlp.html'">
+                        了解更多 <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- 现有的计算机视觉卡片 -->
+                <div class="research-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>计算机视觉</h3>
+                    <p>研究目标检测、场景分割、视觉推理等技术，实现智能视觉感知与理解。</p>
+                    <button class="card-link" onclick="window.location.href='computer-vision.html'">
+                        了解更多 <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加入我们 -->
+    <section class="join-us">
+        <div class="container">
+            <div class="join-content">
+                <h2>加入开窍AI实验室</h2>
+                <p>与顶尖人才共同探索AI的未来</p>
+                <a href="jobs.html" class="btn btn-primary">查看职位</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加入我们部分后添加实验室开放日栏目 -->
+    <section class="open-day">
+        <div class="container">
+            <h2 class="section-title">实验室开放日</h2>
+            <div class="open-day-content">
+                <div class="open-day-info">
+                    <div class="date-info">
+                        <i class="fas fa-calendar"></i>
+                        <div class="date-details">
+                            <h3>2025年3月1日</h3>
+                            <p>19:00 - 20:45</p>
+                        </div>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="location-details">
+                            <h3>开窍AI实验室</h3>
+                            <p>Tencent Meeting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="open-day-description">
+                    <p>开窍AI实验室诚挚邀请对人工智能感兴趣的同学们参加我们的开放日活动。在这里，你将近距离了解AI技术的最新发展，与行业专家面对面交流，体验前沿科技带来的无限可能。</p>
+                </div>
+                <div class="open-day-actions">
+                    <a href="open-day.html" class="btn btn-primary">
+                        <i class="fas fa-info-circle"></i>
+                        了解详情
+                    </a>
+                    <a href="mailto:yansirui_813@163.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        立即报名
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand" id="easterEgg">
+                    <div class="logo">
+                        <span class="logo-icon">AI</span>
+                    </div>
+                    <p>开窍AI实验室</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>联系方式</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>yansirui_813@163.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <p>+86 123 4567 8900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>友情链接/教师作品</h3>
+                        <ul class="friend-links">
+                            <li><a href="https://creatimix.com" target="_blank">
+                                <span class="link-name">Creatimix</span>
+                                <span class="link-desc">创意设计与技术的交融</span>
+                            </a></li>
+                            <li><a href="https://maliwriter.com" target="_blank">
+                                <span class="link-name">Maliwriter</span>
+                                <span class="link-desc">专业的写作与创作平台</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>友情链接/学生作品</h3>
+                        <ul class="friend-links">
+                            <li><a href="https://2050reunion.github.io/#register" target="_blank">
+                                <span class="link-name">2050Reunion</span>
+                                <span class="link-desc">探索2050的科技世界</span>
+                            </a></li>
+                            <li><a href="https://2050reunion.github.io/huayushop/index.html" target="_blank">
+                                <span class="link-name">HuayuShop</span>
+                                <span class="link-desc">专业的花艺设计与服务</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>关注我们</h3>
+                        <div class="social-links">
+                            <a href="wechat.html">
+                                <i class="fab fa-weixin"></i>
+                            </a>
+                            <a href="weibo.html">
+                                <i class="fab fa-weibo"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 开窍AI实验室 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
